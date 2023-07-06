@@ -1,0 +1,12 @@
+
+
+# Start Mosquitto client to listen on localhost for a topic
+# -t = topic
+mosquitto_sub -h localhost -t "mqtt/pimylifeup"
+
+# Start publisher to publish the message "Hello World" to our localhost server
+# -t = topic
+# -m = message
+mosquitto_pub -h localhost -t "mqtt/pimylifeup" -m "Hello World!"
+
+
